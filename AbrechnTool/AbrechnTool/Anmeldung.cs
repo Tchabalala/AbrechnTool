@@ -69,12 +69,17 @@ namespace AbrechnTool
         {
             DataSet userdaten = this.GetUserDaten();
 
-            if (userdaten == null || userdaten.Tables.Count == 0)
+            if (userdaten == null || userdaten.Tables.Count == 0 || userdaten.Tables[0].Rows.Count == 0)
             {
                 MessageBox.Show("Benutzer nicht gefunden!", "Anmeldung fehlgeschlagen");
             }
             else
             {
+                MainWindow mw = new MainWindow();
+                mw.UserDaten = userdaten;
+                this.Visible = false;
+                mw.ShowDialog(this);
+                this.Close();
             }
         }
         #endregion
