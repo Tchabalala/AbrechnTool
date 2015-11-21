@@ -33,9 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AllgLib">
+      <HintPath>..\..\..\..\AllgLibs\AllgLibs\AllgLib\bin\Debug\AllgLib.dll</HintPath>
+    </Reference>
     <Reference Include="SqlLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\AllgLibs\SqlLib\SqlLib\bin\Debug\SqlLib.dll</HintPath>
+      <HintPath>..\..\..\..\AllgLibs\AllgLibs\SqlLib\bin\Debug\SqlLib.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
